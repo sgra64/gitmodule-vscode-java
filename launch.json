@@ -19,7 +19,7 @@
             "type": "java",
             "name": "Launch_2",
             "request": "launch",
-            "mainClass": "se1.fun/application.Application",
+            "mainClass": "se1.play/application.Application",
             "args": "A, BB, CCC",               // alt: ["A", "BB", "CCC"]
             "console": "integratedTerminal",    // reuse terminal
             "vmArgs": "",
