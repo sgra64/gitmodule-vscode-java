@@ -6,29 +6,35 @@
     "version": "1.0.0",
     "configurations": [
         {
-            // launch as non-modular project
+            "type": "java",
+            "name": "Application",
+            "request": "launch",
+            "mainClass": "se1_play/application.Application",
+            "projectName": "$name"
+        },
+        {
             "type": "java",
             "name": "Launch_1",
             "request": "launch",
             "mainClass": "application.Application",
             "args": "",
-            "console": "integratedTerminal",    // reuse terminal
-            "vmArgs": "",
-        }, {
-            // launch as modular project with passing arg[]
+            "console": "integratedTerminal",
+            "vmArgs": ""
+        },
+        {
             "type": "java",
             "name": "Launch_2",
             "request": "launch",
             "mainClass": "se1.play/application.Application",
-            "args": "A, BB, CCC",               // alt: ["A", "BB", "CCC"]
-            "console": "integratedTerminal",    // reuse terminal
-            "vmArgs": "",
-        }, {
-            // launch Chrome browser with Javadoc
+            "args": "A, BB, CCC",
+            "console": "integratedTerminal",
+            "vmArgs": ""
+        },
+        {
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
-            "url": "${workspaceFolder}/target/docs/index.html",
-        },
+            "url": "${workspaceFolder}/target/docs/index.html"
+        }
     ]
 }
