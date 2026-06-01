@@ -9,7 +9,9 @@
     "code-runner.executorMap": {
         // "java": "java -cp @.vscode/.classpath application.Application",
         // "java": "javac @.vscode/.sources -d bin/classes && java -p @.vscode/.modulepath -m se1.play/application.Application",
-        "java": "java @.vscode/launch-coderunner",
+        // "java": "java @.vscode/launch-coderunner",
+        // "java": "[ ! -d target/resources ] && { (cd src; tar -cv ./resources -O) | (mkdir -p target; tar -xf - -C target) }; java @.vscode/launch-coderunner",
+        "java": "[ ! -d target/resources ] && mkdir -p target/resources; cp -R src/resources target; java @.vscode/launch-coderunner",
         "vmArgs": "-Dfile.encoding=UTF-8"
     },
 
