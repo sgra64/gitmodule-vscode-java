@@ -14,6 +14,8 @@
         // "java": "javac *.java && java Application",
         "vmArgs": "-Dfile.encoding=UTF-8"
     },
+    // prevent Java Code Runner from creating tempCodeRunnerFile.java files
+    "code-runner.ignoreSelection": true,
 
     // Java and debug settings
     // "java.autobuild.enabled": true,
@@ -33,5 +35,8 @@
         //   "args": ["--init-file", "~/.profile"],
           "icon": "terminal-bash",
         }
-    }
+    },
+    // enable terminal scrolling with output
+    "terminal.integrated.gpuAcceleration": "auto",
+    "terminal.integrated.smoothScrolling": false
 }
