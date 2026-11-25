@@ -9,6 +9,15 @@
             "type": "java",
             "name": "Launch_1",
             "request": "launch",
+            "mainClass": "application.Application",
+            "args": "",
+            "console": "integratedTerminal",
+            "vmArgs": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch_2",
+            "request": "launch",
             "mainClass": "Application",
             "args": "",
             "console": "integratedTerminal",
